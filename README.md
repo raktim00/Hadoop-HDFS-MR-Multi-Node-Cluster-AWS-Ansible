@@ -29,6 +29,6 @@
 
 - Next go to **"hadoop-ws/roles/ec2/vars/"** folder & edit the **"main.yml"** file. Here you only just need to change the **"subnet_name"** variable with your **"AWS account subnet id"**.
 
-- Note : As I am using AWS default VPC, that's why I haven't mentioned that on my **"hadoop-ws/roles/ec2/tasks/main.yml"** file. But if you want to use your won VPC, then you need to put that extra option here.
+- Note : As I am using AWS default VPC, that's why I haven't mentioned that on my **"hadoop-ws/roles/ec2/tasks/main.yml"** file. But if you want to use your own created VPC, then you need to put that extra option here.
 
 #### Finally it's time to Deploy this whole setup, For that run - `ansible-playbook setup.yml --ask-vault-pass` & provide your vault (cred.yml) password & see the magic of Ansible.
