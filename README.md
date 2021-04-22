@@ -2,10 +2,10 @@
 
 ## Let's see the problem Statement :
 
-1. Create Ansible Role to launch 4 AWS EC2 Instances.
+1. Create Ansible Role to launch 9 AWS EC2 Instances.
 2. Dynamically fetch the IPs & create the Inventory to run the further Ansible Roles on those Instances.
 3. Create Role to configure Hadoop Name Node (Master), Data Node (Worker), Job Tracker Node, Task Tracker Node & Client Node.
-4. Finally configure 1st & 2nd Instance as Name Node & Client Node, also configure other 2 systems as Data Node.
+4. Finally configure 1st & 2nd & 3rd Instance as Name Node, Job Tracker & Client Node, also configure other 3 systems as Data Node & another 3 as Task Tracker.
 
 ### Video Demonstration : https://bit.ly/3tICiLd
 
