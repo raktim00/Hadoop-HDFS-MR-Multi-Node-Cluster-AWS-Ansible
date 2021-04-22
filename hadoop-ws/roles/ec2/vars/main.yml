@@ -1,0 +1,23 @@
+---
+# vars file for ec2
+instance_tag:
+        - hadoop_namenode
+        - hadoop_datanode1
+        - hadoop_datanode2
+        - hadoop_datanode3
+        - hadoop_client
+        - hadoop_jobtracker
+        - hadoop_tasktracker1
+        - hadoop_tasktracker2
+        - hadoop_tasktracker3
+
+python_pkgs:
+        - boto
+        - boto3
+
+sg_name: hadoop_sg
+region_name: ap-south-1
+subnet_name: subnet-6dfdc705
+ami_id: ami-0bcf5425cdc1d8a85
+keypair: hadoop_instance
+instance_flavour: t2.micro
