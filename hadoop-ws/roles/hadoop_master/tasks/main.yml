@@ -34,3 +34,9 @@
 
 - name: Starting Namenode Service
   shell: "hadoop-daemon.sh start namenode"
+  
+- name: Making Hadoop Daemon Service Permanent
+  lineinfile:
+    path: /etc/rc.d/rc.local
+    line: hadoop-daemon.sh start namenode
+    mode: '0755'
